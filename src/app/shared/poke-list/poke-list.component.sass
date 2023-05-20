@@ -1,0 +1,56 @@
+@import "../../../config-sass/variabes"
+
+.listagem
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  .pokemon
+    display: flex
+    width: calc( 49% - 40px )
+    background: $branco
+    border-radius: 10px
+    padding: 20px
+    height: 120px
+    position: relative
+    margin-top: 20px
+    text-decoration: none
+    color: $primay-color
+
+    &__status
+      h2
+        font-size: 22px
+        font-style: italic
+        font-weight: 700
+        margin-bottom: 10px
+        text-transform: capitalize
+      ul
+        display: flex
+        flex-direction: column
+
+        li
+          background:$cinza
+          font-size: 10px
+          display: flex
+          justify-content: center
+          align-items: center
+          border-radius: 50px
+          width: 60px
+          margin-bottom: 5px
+
+    &__image
+      position: absolute
+      bottom: 20px
+      height: 90px
+      width: 110px
+      right: 20px
+      background: url('../../../assets/Bolinhas.svg') no-repeat
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        width: 70px
+
+
+
